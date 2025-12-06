@@ -42,6 +42,12 @@ const MyProjectsSection = styled.section`
     margin-left: 0;
     width: 100%;
   }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    left: 0;
+    margin-left: 0;
+    padding-bottom: 40px;
+    width: 100%;
+  }
 `;
 const ProjectsHeading = styled.h1`
   padding-top: 80px;
