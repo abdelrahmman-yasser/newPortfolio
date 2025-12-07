@@ -8,9 +8,12 @@ const Nav = styled.nav`
   align-items: center;
   justify-content: space-between;
   padding: 1.5rem 2.6rem;
+  padding: 1.5rem 2.6rem 0 2.6rem;
 
   @media (max-width: 768px) {
     padding: 1.5rem 16px;
+  }
+  @media (max-width: 985px) {
   }
 `;
 const Links = styled.div`

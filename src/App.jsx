@@ -17,9 +17,12 @@ export const OutLineText = styled.span`
   color: white;
   -webkit-text-stroke: 2px black;
   -webkit-font-smoothing: antialiased;
+  margin-left: 10px;
   @media (max-width: 768px) {
     font-size: 40px;
-    padding-left: 5px;
+  }
+  @media (min-width: 768px) and (max-width: 1000px) {
+    font-size: 36px;
   }
 `;
 function App() {

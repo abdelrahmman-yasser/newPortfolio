@@ -33,19 +33,14 @@ const MyProjectsSection = styled.section`
   right: 50%;
   margin-left: calc(-50vw);
   margin-right: calc(-50vw);
+  padding-bottom: 40px;
   box-sizing: border-box;
   overflow-x: hidden;
   color: white;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1279px) {
     left: 0;
     margin-left: 0;
-    width: 100%;
-  }
-  @media (min-width: 768px) and (max-width: 1023px) {
-    left: 0;
-    margin-left: 0;
-    padding-bottom: 40px;
     width: 100%;
   }
 `;
@@ -66,22 +61,22 @@ const EachProject = styled.article`
 
   @media (max-width: 768px) {
     flex-direction: column;
-    padding: 0 0 40px 0;
+    padding: 10px 50px;
+  }
+
+  @media (min-width: 768px) and (max-width: 1000px) {
+    flex-direction: column;
+    padding: 0 100px 78px 100px;
     gap: 10px;
   }
 `;
 const Img = styled.img`
   padding: 0;
-  @media (max-width: 768px) {
-    padding: 0 ${(props) => (props.$Right ? "25px" : 0)} 0
-      ${(props) => (props.$Right ? 0 : "25px")};
-  }
 `;
 const ProjectContent = styled.div`
   text-align: start;
 
   @media (max-width: 768px) {
-    padding: 0 25px;
     line-height: 30px;
   }
 
@@ -93,6 +88,7 @@ const ProjectContent = styled.div`
   p {
     opacity: 50%;
     margin-bottom: 25px;
+
     @media (max-width: 768px) {
       font-size: 15px;
     }

@@ -23,7 +23,7 @@ const Footer = styled.footer`
     }
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 1279px) {
     justify-content: space-between;
     padding: 10px;
     gap: 0px;

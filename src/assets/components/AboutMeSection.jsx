@@ -4,15 +4,22 @@ const Section = styled.section`
   display: flex;
   gap: 80px;
   padding: 60px 39px;
+
   @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media (min-width: 768px) and (max-width: 1000px) {
     flex-direction: column;
     padding: 40px 16px;
     align-items: center;
+    gap: 40px;
   }
-  img {
-    @media (max-width: 768px) {
-      width: 360px;
-    }
+`;
+const Img = styled.img`
+  @media (max-width: 768px) {
+    width: 360px;
   }
 `;
 const Content = styled.article`
@@ -33,7 +40,7 @@ function AboutMeSection() {
   return (
     <>
       <Section id="about-me">
-        <img src="./images/aboutMeimg.svg" />
+        <Img src="./images/aboutMeimg.svg" />
         <Content>
           <SectionHeading>About Me</SectionHeading>
           <Paragraph>

@@ -10,12 +10,17 @@ const Tesitmoinal = styled.div`
 
     @media (max-width: 768px) {
       flex-direction: column;
+      gap: 25px;
+    }
+    @media (min-width: 768px) and (max-width: 923px) {
+      gap: 15px;
     }
   }
 `;
 const TesitmoinalHeading = styled.h1`
   margin-top: 80px;
   margin-bottom: 80px;
+
   @media (max-width: 768px) {
     margin-bottom: 35px;
     font-size: 37px;
@@ -43,13 +48,16 @@ const Card = styled.div`
   @media (max-width: 768px) {
   }
 `;
+
 const Line = styled.div`
   width: 150px;
   border: 1px solid;
 `;
+
 const Opinion = styled.p`
   margin: 0;
 `;
+
 function TesitmoinalSection() {
   const clients = [
     {

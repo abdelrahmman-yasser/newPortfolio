@@ -11,9 +11,15 @@ const ContactMe = styled.div`
   div {
     flex: 1;
   }
+
   @media (max-width: 768px) {
     flex-direction: column;
+  }
+
+  @media (min-width: 768px) and (max-width: 1000px) {
+    flex-direction: column;
     padding: 25px;
+    margin-top: 80px;
     margin-bottom: 10px;
   }
 `;
@@ -30,7 +36,10 @@ const Input = styled.input`
   border-radius: 5px;
 
   @media (max-width: 768px) {
-    max-width: 300px;
+    width: 300px;
+  }
+  @media (min-width: 768px) and (max-width: 923px) {
+    width: 560px;
   }
 `;
 const Left = styled.div`
@@ -105,7 +114,7 @@ function ContactMeSection() {
             I seek to push the limits of creativity to create high-engaging,
             user-friendly, and memorable interactive experiences.
           </Paragraph>
-          <Paragraph $large>Youremail@gmail.com</Paragraph>
+          <Paragraph $large>bodaGomaa90@gmail.com</Paragraph>
           <Paragraph $large>01234567891</Paragraph>
         </Right>
       </ContactMe>

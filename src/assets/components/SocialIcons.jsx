@@ -17,13 +17,17 @@ const Icon = styled.div`
 
 const Icons = styled.div`
   position: ${(props) => props.position || "absolute"};
-  bottom: ${(props) => props.bottom || "-24px"};
-  left: ${(props) => props.left || "28px"};
+  bottom: ${(props) => props.bottom || "-113px"};
+  left: ${(props) => props.left || "-12px"};
+
   @media (max-width: 768px) {
     bottom: ${(props) => props.mobileBottom || props.bottom};
     left: ${(props) => props.mobileLeft || props.left};
-
     margin-left: ${(props) => (props.position === "relative" ? "-12px" : 0)};
+  }
+
+  @media (min-width: 768px) and (max-width: 1000px) {
+    bottom: ${(props) => props.bottom || "-22px"};
   }
 `;
 function SocialIcons({ position, bottom, left, mobileBottom, mobileLeft }) {

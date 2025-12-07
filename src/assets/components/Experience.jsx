@@ -18,13 +18,7 @@ const ExperienceDiv = styled.div`
   padding-bottom: 100px;
   gap: 32px;
 
-  @media (max-width: 768px) {
-    left: 0;
-    margin-left: 0;
-    padding-bottom: 40px;
-    width: 100%;
-  }
-  @media (min-width: 768px) and (max-width: 1023px) {
+  @media (max-width: 1279px) {
     left: 0;
     margin-left: 0;
     padding-bottom: 40px;
@@ -79,6 +73,9 @@ const EachExperience = styled.div`
     `}
   @media(max-width:768px) {
     max-width: 19rem;
+  }
+  @media (min-width: 768px) and (max-width: 1000px) {
+    max-width: 45rem;
   }
 `;
 const ExperienceHeader = styled.h1`

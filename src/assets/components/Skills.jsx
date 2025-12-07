@@ -15,20 +15,25 @@ import {
   SiVite,
   SiSocketdotio,
 } from "react-icons/si";
-
 const SkillsWrapper = styled.div`
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(6, 0fr);
   grid-template-rows: repeat(2, 150px);
   gap: 51px;
   padding: 39px;
+  justify-content: center;
+  align-items: center;
 
   @media (max-width: 768px) {
     grid-template-columns: repeat(2, 160px);
     padding: 0;
     gap: 20px;
-    justify-content: center;
-    align-items: center;
+  }
+  @media (min-width: 1058px) and (max-width: 1250px) {
+    grid-template-columns: repeat(5, 0fr);
+  }
+  @media (min-width: 768px) and (max-width: 1058px) {
+    grid-template-columns: repeat(4, 0fr);
   }
 `;
 
@@ -60,6 +65,7 @@ const Icon = styled.div`
 `;
 const SkillsSection = styled.div`
   margin-top: 8rem;
+  margin-bottom: 35px;
   @media (max-width: 768px) {
     margin-top: 13rem;
     margin-bottom: 40px;
